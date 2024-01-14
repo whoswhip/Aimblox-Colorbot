@@ -109,6 +109,10 @@ def loadsettings(): #loading the settings, duh.
             colorname = Fore.CYAN
             upper = np.array((90, 255, 201), dtype="uint8")
             lower = np.array((90, 255, 201), dtype="uint8")
+        if COLOR.lower() == "red":
+            colorname = Fore.LIGHTRED_EX
+            upper = np.array((4, 225, 206), dtype="uint8")
+            lower = np.array((0, 175, 119), dtype="uint8")
 
     except Exception as e:
         print("Error loading settings:", e)
@@ -220,10 +224,12 @@ def print_banner(b0t: trb0t): #Printing the information
             Style.BRIGHT
             + Fore.CYAN
             + """
-    _   ___  ___ ___ _  _   _   _       ___ ___  _    ___  ___ ___  ___ _____ 
-   /_\ | _ \/ __| __| \| | /_\ | |     / __/ _ \| |  / _ \| _ \ _ )/ _ \_   _|
-  / _ \|   /\__ \ _|| .` |/ _ \| |__  | (_| (_) | |_| (_) |   / _ \ (_) || |  
- /_/ \_\_|_\|___/___|_|\_/_/ \_\____|  \___\___/|____\___/|_|_\___/\___/ |_|                                                                                                                                                                                                                      
+           _____ __  __ ____  _      ______   __   _____ ____  _      ____  _____  ____   ____ _______ 
+     /\   |_   _|  \/  |  _ \| |    / __ \ \ / /  / ____/ __ \| |    / __ \|  __ \|  _ \ / __ \__   __|
+    /  \    | | | \  / | |_) | |   | |  | \ V /  | |   | |  | | |   | |  | | |__) | |_) | |  | | | |   
+   / /\ \   | | | |\/| |  _ <| |   | |  | |> <   | |   | |  | | |   | |  | |  _  /|  _ <| |  | | | |   
+  / ____ \ _| |_| |  | | |_) | |___| |__| / . \  | |___| |__| | |___| |__| | | \ \| |_) | |__| | | |   
+ /_/    \_\_____|_|  |_|____/|______\____/_/ \_\  \_____\____/|______\____/|_|  \_\____/ \____/  |_|                                                                                                                                                                                                                                                                                                                                                                                                                                  
 """
             + Style.RESET_ALL
         )
@@ -301,14 +307,11 @@ try:
         buffer2 = open(os.path.join(os.path.dirname(__file__), "lastlaunch.txt"), "w+")
         buffer2.write(str(currenttime))
         buffer2.close()
-        openwebpage("https://discord.gg/hH62fKGJnv")
     buffer.close()
 except:
     buffer = open(os.path.join(os.path.dirname(__file__), "lastlaunch.txt"), "w+")
     buffer.write(str(time.time()))
     buffer.close()
-    openwebpage("https://discord.gg/hH62fKGJnv")
-
 if __name__ == "__main__":
     b0t = trb0t() #the main class we made earlier
     try:
