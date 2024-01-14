@@ -3,6 +3,7 @@
 - Seconb (Primary developer)
 - AndrewDarkyy (https://github.com/AndrewDarkyy) (https://discord.gg/hH62fKGJnv) (Co-developer, contributed many features such as aim smoothening and checking if Roblox is open. NOT OFFICIALLY A DEVELOPER AT THIS TIME)
 - Befia/Taylor (Contributed some bugfixes and comments to explain certain areas of code, and added basic error handling. Not an actual developer for the project though)
+- Whoswhip ( Added 4 lines of code to add the color red )
 
 # FEATURES
 
@@ -20,7 +21,7 @@
 
 - Windows 10/11 only, stretched/non-native resolutions may have issues. Turn off "Mouse Acceleration" in Windows.
 
-- Download from the Releases page: https://github.com/Seconb/Arsenal-Colorbot/releases/
+- Download from the Releases page: https://github.com/whoswhip/Aimblox-Colorbot/releases/
 
 - Extract everything to a folder
 
@@ -28,7 +29,7 @@
 
 - Run aimsource.exe
 
-- Turn on "Enemy Outlines" in Arsenal, and set the color to match the one in your "config.ini"
+- Go into settings and turn on "Auto Hide Nametags", this prevents it from locking onto the nametags when on red.
 
 - Use the colorbot. Note: Not required at all, but turning off Kill Effects, Ragdolls, and Shadows while turning on Basic Skins and Disable Bloom is recommended.
 
