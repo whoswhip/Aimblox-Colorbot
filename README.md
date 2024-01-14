@@ -7,7 +7,7 @@
 
 # FEATURES
 
-- Aimbot based on the outlines around enemies in Arsenal (Arsenal only at this time, but if you know of another **ROBLOX** game that uses color outlines and is popular, tell me!
+- Aimbot based on the outlines around enemies in Arsenal, and Aimblox (Arsenal and Aimblox only at this time, but if you know of another **ROBLOX** game that uses color outlines and is popular, tell Seconb!
 - Triggerbot (automatically shoots enemies if enabled!)
 - Adjustable aim (where it aims like their head or their body, and the speed and distance it does that from)
 - Easy configuration via a file!
